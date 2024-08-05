@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 85px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 10px;
+            background-color: purple;
+            position: relative;
+         
+
+        }
+         .B{
+            width: 370px;
+            height: 600px;
+            border-radius: 26px;
+            border: 2px solid black;
+            overflow-y: scroll;
+            scrollbar-width: none;
+
+
+         }
+      
+
+        .a {
+            grid-column: 1/5;
+            grid-row: 1/2;
+            height: 50px;
+            position: sticky;
+            background-color: green;
+            z-index: 1;
+            top: 0px;
+        }
+
+        .b {
+            position: relative;
+            grid-column: 1/5;
+            grid-row: 2/3;
+            height: 20px;
+            bottom: 50px;
+
+        }
+
+        .e {
+            grid-column: 1/5;
+            grid-row: 3/4;
+            height: 25px;
+            position: relative;
+            bottom: 135px;
+            color:lightseagreen;
+        }
+
+        .c {
+            grid-row: 4/5;
+            position: relative;
+            bottom: 220px;
+            width: 10px;
+
+        }
+
+        .d {
+            grid-row: 4/5;
+            position: relative;
+            bottom: 220px;
+
+        }
+
+        .g {
+            grid-row: 4/5;
+            position: relative;
+            bottom: 220px;
+        }
+
+        .h {
+            grid-row: 4/5;
+            position: relative;
+            bottom: 220px;
+
+        }
+
+        .i {
+            grid-row: 5/6;
+            position: relative;
+            bottom: 220px;
+
+        }
+
+        .j {
+            grid-row: 5/6;
+            position: relative;
+            bottom: 220px;
+
+        }
+
+        .k {
+            grid-row: 5/6;
+            position: relative;
+            bottom: 220px;
+
+        }
+
+        .l {
+            grid-row: 5/6;
+            position: relative;
+            bottom: 220px;
+        }
+
+        .n {
+            grid-row: 6/7;
+            grid-column: 1/5;
+            position: relative;
+            bottom: 220px;
+            left: 5px;
+        }
+
+        .o {
+            grid-row: 7/8;
+            grid-column: 1/5;
+            position: relative;
+            bottom: 230px;
+
+
+        }
+
+        .q {
+            grid-row: 8/9;
+            grid-column: 1/3;
+            position: relative;
+            bottom: 230px;
+
+        }
+
+        .r {
+            grid-row: 8/9;
+            grid-column: 3/5;
+            position: relative;
+            bottom: 230px;
+
+        }
+
+        .t {
+            grid-row: 9/10;
+            grid-column: 1/3;
+            position: relative;
+            bottom: 245px;
+        }
+
+        .u {
+            grid-row: 9/10;
+            grid-column: 3/5;
+            position: relative;
+            right: 200px;
+
+        }
+
+        .v {
+            grid-column: 1/5;
+            position: sticky;
+            bottom: 0px;
+            height: 40px;
+            background-color: aliceblue;
+        }
+        #u{
+            grid-column: 1/5;
+          
+        }
+        
+        #a {
+            border-radius: 50%;
+        }
+
+        #b {
+            position: relative;
+            bottom: 20px;
+        }
+
+        #c {
+            position: relative;
+            bottom: 10px;
+            left: 100px;
+            background-color: purple;
+            color: purple;
+        }
+
+        #d {
+            position: relative;
+            bottom: 5px;
+            left: 110px;
+        }
+
+        #e {
+            position: relative;
+            bottom: 10px;
+            left: 110px;
+        }
+
+        #f {
+            position: relative;
+            bottom: 20px;
+         left:30px;
+        }
+
+        input {
+            width: 360px;
+            height: 20px;
+        }
+
+        #g {
+            position: relative;
+            bottom: 20px;
+            left: 280px;
+        }
+
+        #h {
+            position: relative;
+            bottom: 20px;
+            left: 300px;
+        }
+
+        .e>i {
+            position: relative;
+            top: 0px;
+            left: 10px;
+        }
+
+        #i {
+            position: relative;
+            left: 20px;
+        }
+
+        #j {
+            position: relative;
+            bottom: 190px;
+            left: 5px;
+        }
+
+        span {
+            position: relative;
+            left: 15px;
+        }
+
+        .j>span {
+            position: relative;
+            right: 15px;
+        }
+
+        #x {
+            position: relative;
+            left: 90px;
+
+        }
+
+        #y {
+            position: relative;
+            left: 160px;
+
+        }
+
+        #z {
+            position: relative;
+            left: 250px;
+
+        }
+        #m{
+            position: relative;
+            left: 130px;
+        }
+        #n{
+            position: relative;
+            left: 50px;
+
+        }
+        #o{
+            position: relative;
+            right: 20px;
+            bottom: 30px;
+
+        }
+        #p{
+            position: relative;
+            left: 130px;
+            bottom: 230px;
+        }
+        #k{
+            position: relative;
+            bottom: 220px;
+            left: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="B">
+        <div class="container">
+        <div class="a"><img id="a" src="./profile.webp" width="50px"><span id="b">Gangula.Usha</span><img id="c"
+                src="./heart-image.webp" width="40px"><img id="d" src="./notification.jpg" width="25px"> <img id="e"
+                src="./order.webp" width="25px"></div>
+        <div class="b"> <input type="text" name="search" id="search"
+                placeholder="                 searchby Keyword or Product ID">
+            <span id="f"><i class="fa-solid fa-magnifying-glass"></i></span><span id="g"><i
+                    class="fa-solid fa-microphone"></i></span><span id="h"><i
+                    class="fa-duotone fa-solid fa-camera"></i></span>
+        </div>
+        <div class="e"><i class="fa-duotone fa-solid fa-location-dot"></i><span id="i">Delivering to Ramachandhrapuram
+                -502032 ></span> </div>
+        <div class="c"><img src="./dryfruits.avif" width="90px" height="100px"><span
+                style="background-color: lightgreen;">Dryfruits</span></div>
+        <div class="d"><img src="./sports.jpg" width="90px" height="100px"><span
+                style="background-color: lightgreen;">Sports</span></div>
+        <div class="g"><img src="./kitchen-items.webp" width="90px" height="100px"><span
+                style="background-color: lightgreen;">Kitchen</span></div>
+        <div class="h"><img src="./beauty.jpg" width="80px" height="100px"><span
+                style="background-color: lightgreen;">Beauty </span></div>
+        <div class="i"><img src="./home decors.webp" width="90px" height="100px"><span
+                style="background-color: lightgreen;">Decors</span></div>
+        <div class="j"><img src="./electronics.jpg" width="90px" height="100px"><span
+                style="background-color: lightgreen;">Electronics</span></div>
+        <div class="k"><img src="./Healthcare.webp" width="90px" height="100px"><span
+                style="background-color: lightgreen;">Healthcare</span></div>
+        <div class="l"><img src="./books.png" width="80px" height="100px"><span
+                style="background-color: lightgreen;">Books</span></div>
+        <div class="n"><img src="./WhatsApp1.jpg" width="360" height="200px"></div>
+        <div class="o"><img src="./Sarees2.webp" width="150" height="190px"><img src="./special-offer-sale.jpg"
+                width="120" height="190px"><img src="./Sarees.jpg" width="95" height="190px"></div>
+        <div class="q"><img src="./Jewelery.jpg" width="180" height="190px"><img id="j"
+                src="./png-transparent-50-logo-50-off-sale-label-blue-text-logo.png" width="20px"> <span   id="n"
+                style="background-color: lightgreen;">Jewelery</span></div>
+        <div class="r"><img src="./bags.webp" width="178" height="190px"><img id="j"
+                src="./png-transparent-50-logo-50-off-sale-label-blue-text-logo.png" width="50px"><span  id="o"
+                style="background-color: lightgreen;">Bags</span></div>
+        <div class="t"><img src="./kidswear.jpg" width="365px" height="220px"><img id="k"
+                src="./png-transparent-50-logo-50-off-sale-label-blue-text-logo.png" width="20px"><span  id="p"
+                style="background-color: lightgreen;">Kidswear</span></div>
+        <div class="u"><img src="./womenwear.jpg" width="370" height="220px"><img id="k"
+                src="./png-transparent-50-logo-50-off-sale-label-blue-text-logo.png" width="20px"><span id="m"
+                style="background-color: lightgreen;">Womenswear</span></div>
+        <div id="u"><img src="./WhatsApp2.jpg" width="365px" height="300px" ></div>
+        <div class="v"><span id="x"><i class="fa-solid fa-square"></i></span><span id="y"><i class="fa-duotone fa-solid fa-circle"></i></span><span id="z"><i class="fa-solid fa-play"></i></span></div>
+
+    </div>
+
+
+    </div>
+</body>
+
+</html>
